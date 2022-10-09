@@ -1,0 +1,126 @@
+@media only screen and (max-width: 1550px) {
+    .center{
+        width: 1099px;
+    }
+    .app_minehost{
+        background-size: auto 800px;
+    }
+    .app_sitehost{
+        background-size: auto 800px;
+    }
+    .app{
+        background-size: auto 800px;
+    }
+    .app_minehost-image-content{
+        display: none;
+    }
+    .app_minehost-image-content{
+        display: none;
+    }
+    .app-text{
+        width: 100%;
+        float: unset;
+    }
+    .reasons{
+        padding-top: 20px;
+    }
+    .select-db {
+        width: 100%;
+        float: unset;
+    }
+    .prices-container2{
+        margin: 0 auto;
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding-bottom: 50px;
+    }
+    .app-content{
+        padding-top: 80px;
+    }
+}
+@media only screen and (max-width: 1307px) {
+    .reason-image-box{
+        display: none;
+    }
+    .reason{
+        padding-bottom: 20px;
+    }
+    .app-content{
+        padding-top: 50px;
+    }
+    .reasons{
+        width: 100%;
+        float: unset;
+    }
+    .reason-boxes-icons{
+        padding-left: 0px;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+    .reason-box-padding{
+        padding-left: 0px;
+        padding-top: 20px;
+    }
+    .reason-boxes-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .app_minehost-image-content{
+        display: none;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .center{
+        width: 649px;
+    }
+    .navbar{
+        display: none;
+    }
+    .responsive-navbar{
+        display: block;
+        float: right;
+        padding-top: 35px;
+        padding-right: 50px;
+    }
+    .app-text{
+        width: 100%;
+        float: unset;
+    }
+    .app-image-box{
+        display: none;
+    }
+    
+}
+@media only screen and (max-width: 665px) {
+    .center{
+        width: 100%;
+    }
+    .payment{
+        display: none;
+    }
+    .other-flag{
+        margin-left: 0px;
+    }
+    .app_minehost{
+        background-size: auto 1500px;
+    }
+    .prices-container2{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .prices-containersite{
+        grid-template-columns: repeat(1, 1fr);
+        padding-bottom: 50px;
+    }
+    .db-selector-container{
+        padding-top: 420px;
+        position: relative;
+    }
+    .db-selector{
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

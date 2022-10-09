@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+
+        <title>loup.host</title>
+        <link href='http://fonts.googleapis.com/css?family=Poppins:300,400' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" type="text/css" href="css/reset.css"> 
+        <link rel="stylesheet" type="text/css" href="css/master.css"> 
+        <link rel="stylesheet" type="text/css" href="css/responsive.css"> 
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <nav>
+            <div class="center">
+                <a href="#" class="logo">
+                    <i id="logo"></i>
+                </a>
+                
+                <div class="responsive-navbar" id="responsive-navbar">
+                    <a href="##" onclick="openMenu()">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </a>
+                </div>
+                
+                <div class="mobile-nav" id="mobile-nav">
+                
+                    <div class="center">
+                        <div class="responsive-navbar-white">
+                            <a href="##" onclick="closeMenu()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <ul>
+                        <li>
+                            <a href="/index.html" class="nav-link">Início</a>
+                        </li>
+                        <li>
+                           <a href="/host_mine.html" class="nav-link" id="selected">Hospedagem Minecraft</a>
+                        </li>
+                        <li>
+                            <a href="/host_site.html" class="nav-link">Hospedagem Sites</a>
+                        </li>
+                        <li>
+                            <a href="https://cliente.loup.host" class="btn-nav">Área do Cliente</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="navbar">
+                    <ul class="nav-itens">
+                        <li class="nav-item">
+                            <a href="/index.html" class="nav-link">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/host_mine.html" class="nav-link" id="selected">Hospedagem Minecraft</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/host_site.html" class="nav-link">Hospedagem Sites</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a href="https://cliente.loup.host" class="btn-nav">Área do Cliente</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        
+        <div class="clear"></div>
+        
+        <section class="app_minehost">
+            <div class="center">
+
+
+                <div class="app_minehost-image"> 
+                    <div class="app_minehost-image-content">
+                        <img src="imgs/render_3.png" alt="">
+                    </div>
+                </div>
+                <div class="select-db">
+                    <h1>Você está conferindo planos de <strong>Hospedagem de Minecraft</strong>!</h1>
+                    <h2>Selecione o datacenter:</h2>
+                    <div class="db-selector-container">              
+                        <div class="db-selector">
+
+
+                                <div class="database-box" id="br">
+                                    <a href="##" onclick="changePricesBR()">
+                                        <img src="/imgs/bandeira_br.png" style="width: 70%;" alt="icon" class="database-flag">
+                                        <h1>São Paulo</h1>
+                                    </a>
+                                </div>
+                                <div class="database-box other-flag non-selected" id="usa">
+                                    <a href="##" onclick="changePricesUSA()">
+                                        <img src="/imgs/bandeira_usa.png" style="width: 70%;" alt="icon" class="database-flag">
+                                        <h1>Lenoir</h1>
+                                    </a>
+                                </div>
+        
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="initial-prices">
+            <div class="center">
+                <div class="prices-container">
+                    <div class="prices-container2">
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 1</h1>
+                                <h2 id="price-1"><strong>R$</strong> 9,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>2GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="http://cliente.loup.host/cart.php?a=add&pid=2x" class="buy-btn" id="buy-1">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 2</h1>
+                                <h2 id="price-2"><strong>R$</strong> 12,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>3GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="http://cliente.loup.host/cart.php?a=add&pid=3" class="buy-btn" id="buy-2">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 3</h1>
+                                <h2 id="price-3"><strong>R$</strong> 15,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>4GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=4" class="buy-btn" id="buy-3">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 4</h1>
+                                <h2 id="price-4"><strong>R$</strong> 18,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>5GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=5" class="buy-btn" id="buy-4">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 5</h1>
+                                <h2 id="price-5"><strong>R$</strong> 20,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>6GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=7" class="buy-btn" id="buy-5">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 6</h1>
+                                <h2 id="price-6"><strong>R$</strong> 22,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>7GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=8" class="buy-btn" id="buy-6">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 7</h1>
+                                <h2 id="price-7"><strong>R$</strong> 24,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>8GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=10" class="buy-btn" id="buy-7">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 8</h1>
+                                <h2 id="price-8"><strong>R$</strong> 32,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>10GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=11" class="buy-btn" id="buy-8">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 9</h1>
+                                <h2 id="price-9"><strong>R$</strong> 36,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>12GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=12" class="buy-btn" id="buy-9">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 10</h1>
+                                <h2 id="price-10"><strong>R$</strong> 39,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>14GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=13" class="buy-btn" id="buy-10">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 11</h1>
+                                <h2 id="price-11"><strong>R$</strong> 42,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>16GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=14" class="buy-btn" id="buy-11">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                        <div class="price-box-container">
+                            <div class="price-box">
+                                <h1>Plano 12</h1>
+                                <h2 id="price-12"><strong>R$</strong> 59,99<a>/mês</a></h2>
+                                <div class="price-decoration"></div>
+                                <div class="price-box-decoration"></div>
+
+                                <div class="price-box-specs-left">    
+                                    <h3>RAM</h3>
+                                    <h3>SLOTS</h3>
+                                    <h3>DISCO</h3>  
+                                    <h3>UPTIME</h3>
+                                </div>
+                                
+                                <div class="price-box-specs-right">    
+                                    <h4>20GB</h4>
+                                    <h4>Ilimitado</h4>
+                                    <h4>5GB</h4>  
+                                    <h4>99.9%</h4>
+                                </div>
+
+                                
+                                <div class="clear"></div>
+
+                                <div class="price-box-btn">  
+                                    <a href="https://cliente.loup.host/cart.php?a=add&pid=15" class="buy-btn" id="buy-12">
+                                        SELECIONAR
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer style="margin-top: 40px;">
+            <div class="center">
+                <div class="footer-images">
+                    
+                    <a href="#" class="logo_footer">
+                        <i id="white_logo"></i>
+                    </a>
+                    <img src="/imgs/pagamento.png" alt="icon" class="payment">
+                    
+              
+                </div>
+
+                <h1 class="footer-text"><strong>loup</strong>.host</h1>
+                <div class="footer-links">
+
+                    <div class="clear"></div>
+                    <ul>
+                        <li class="footer-item">
+                            <a href="https://cliente.loup.host" class="footer-link">Área do Cliente</a>
+                            <div class="clear"></div>
+                        </li>
+                        
+                        <li class="footer-item">
+                            <a href="/termos.html" class="footer-link">Termos</a>
+                            <div class="clear"></div>
+                        </li>
+                        
+                        <li class="footer-item">
+                            <a href="https://discord.gg/XcnjNQ5s75" class="footer-link">Discord</a>
+                            <div class="clear"></div>
+                        </li>
+    
+                    </ul>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <script src="js/selectdb.js"></script>
+        <script src="js/mobile.js"></script>
+
+    </body>
+</html>
